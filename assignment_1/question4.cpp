@@ -19,7 +19,7 @@ int first_position(int arr[],int n, int x)
      else{
          res=mid;
          right=right-1;}
-     
+    
      }
 
      return res;
