@@ -7,21 +7,21 @@ int first_position(int arr[],int n, int x)
 {   int res=-1;
     int left=0;
     int right=n-1;
-    while(left<=right)
-    {
+     while(left<=right){
      int mid = (left+right)/2;
-     if (x<arr[mid]){
+     if (x<arr[mid])
+     {
          right=mid-1;
      }
      else if(x>arr[mid]){
          left=mid+1;
      }
-     else
-     {
+     else{
          res=mid;
-         right=mid-1;
+         right=right-1;}
+     
      }
-    }
+
      return res;
 }
 
@@ -31,7 +31,8 @@ int last_position(int arr[],int n, int x)
     int right=n-1;
     while(left<=right){
      int mid = (left+right)/2;
-     if (x<arr[mid]){
+     if (x<arr[mid])
+     {
          right=mid-1;
      }
      else if(x>arr[mid]){
