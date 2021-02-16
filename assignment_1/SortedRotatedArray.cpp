@@ -11,7 +11,7 @@ int pivot(int arr[],int low,int high){
     if(high>mid && arr[mid]>arr[mid+1]){
         return mid;
     }
-    if (low<mid&& arr[mid]<arr[mid-1]){
+    if (low<mid && arr[mid]<arr[mid-1]){
         return (mid-1);
     }
     if (arr[low]>arr[mid]){
