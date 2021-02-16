@@ -24,7 +24,7 @@ void combination(string s, int left, int right)
  
 int main() 
 { 
-    string str = "AB"; 
+    string str = "ABD"; 
     int n = str.size(); 
     combination(str, 0, n-1); 
     return 0; 
