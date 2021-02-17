@@ -1,5 +1,7 @@
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
+#define ll long long
+#define max 1000000007
 void swap(int *a, int *b) {
   int t = *a;
   *a = *b;
