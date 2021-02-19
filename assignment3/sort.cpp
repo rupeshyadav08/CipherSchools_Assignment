@@ -87,7 +87,7 @@ void print(node** head)
     }
 
 }
-  
+
 
 
 int main(){
@@ -103,6 +103,6 @@ push(&head,1);
 cout<<"Before\n";
 print(&head);
 cout<<"\nAfter\n";
-sort(&head);
+sort(head,3);
 print(&head);
 }
