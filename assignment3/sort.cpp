@@ -92,11 +92,14 @@ void print(node** head)
 
 int main(){
 node* head=NULL;
+push(&head,110);
+push(&head,22);
+push(&head,10);
+push(&head,5);
 push(&head,1);
-push(&head,2);
-push(&head,3);
-push(&head,2);
-push(&head,1);
+
+
+
 cout<<"Before\n";
 print(&head);
 cout<<"\nAfter\n";
