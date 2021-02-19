@@ -13,8 +13,7 @@ void push(node** head,int newdata){
 }
 
 void duplicate(node* head) 
-{ 
-   
+{  
     node* copy = new node; 
     copy->next = head; 
     node* prev = copy; 
@@ -22,26 +21,22 @@ void duplicate(node* head)
   
     while(curr != NULL) 
     { 
-      
-        while((curr->next != NULL) && (prev->next -> data == curr -> next->data) ){
+        while((curr->next != NULL) && (prev->next -> data == curr -> next->data) )
+        {
             curr = curr->next; 
             }
 
-        if (prev->next == curr) {
+        if (prev->next == curr) 
+        {
 
             prev = prev->next; 
             }
-  
-       
         else
         {
             prev-> next = curr->next;
              }
-  
         curr = curr->next; 
     } 
-  
-   
     head = copy -> next; 
 } 
 
