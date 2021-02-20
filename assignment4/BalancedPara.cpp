@@ -12,7 +12,6 @@ bool validate(string str){
         }
         else{
             if (s.empty()==true){
-                cout<<" ek  ";
                 return false;
             }
             char c= s.top();
@@ -21,13 +20,11 @@ bool validate(string str){
             {
                 if (c == ')'){
                 cout<<" do  ";
-                    return true;
                 }
             }
              if (c=='{')
              {
                 if (c == '}'){
-                    cout<<" teen  ";
 
                     return true;
                 }
@@ -35,7 +32,6 @@ bool validate(string str){
               if (c=='[')
              {
                 if (c == ']'){
-                    cout<<" char ";
                     return true;
                 }
              }
