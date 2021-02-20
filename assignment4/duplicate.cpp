@@ -28,7 +28,7 @@ bool duplicate(string str,int n)
 }
 
 int main(){
-    string s="((a+b))";
+    string s="(a+b)";
     int n=s.length();
     cout<<duplicate(s,n);
 }
