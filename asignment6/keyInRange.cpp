@@ -17,30 +17,18 @@ struct node* addnode( int val)
     return addnode;
 }
 
-node* min(node* root){
-    node* temp=root;
-    while(temp->left!=NULL)
-    {
-        temp=temp->left;
 
-    }
-    return temp;
-}
-
-node* InorderSucc(  node* n,int a)
-{
-    if (n->right != NULL){
-
-        return min(n->right);
-        }
- 
-     node* p = n->parent;
-    while (p != NULL && n == p->right) {
-        n = p;
-        p = p->parent;
-    }
-    return p;
-}
+void Print(node *root, int k1, int k2) 
+{ 
+    if ( NULL == root ) 
+        return; 
+    if ( k1 < root->data ) 
+        Print(root->left, k1, k2); 
+    if ( k1 <= root->data && k2 >= root->data ) 
+        cout<<root->data<<" "; 
+    if ( k2 > root->data ) 
+        Print(root->right, k1, k2); 
+} 
 
 
 int main(){
@@ -51,5 +39,5 @@ int main(){
     root->left->right = addnode(12);  
     root->left->right->left = addnode(10);  
     root->left->right->right = addnode(14);
-    cout<<InorderSucc(root,14);
+    Print(root,10,14);
 }
