@@ -6,7 +6,6 @@ struct node {
     int data;
     node* left, *right ;
 };
-
 struct node* addnode( int val)
 {
     struct node* addnode = new node();
@@ -14,7 +13,6 @@ struct node* addnode( int val)
     addnode->left=addnode->right=NULL;
     return addnode;
 }
-
  vector<int> twosum(vector<int>& nums, int target) 
     {
         vector<int> result; 
