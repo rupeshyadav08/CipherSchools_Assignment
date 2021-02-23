@@ -8,9 +8,6 @@ int max(int x, int y){
     }
     return y;
 }
-
-  
-
 int Knap(int W, int weight[], int val[], int n)
 {
     int i, w;
